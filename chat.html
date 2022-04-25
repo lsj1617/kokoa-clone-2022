@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+  </head>
+  <body class="chat-screen">
+    <div class="status-bar chat-bar">
+      <div class="status-bar__left">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi fa-lg"></i>
+      </div>
+      <div class="status-bar__center">
+        <span>22:25</span>
+      </div>
+      <div class="status-bar__right">
+        <span>80%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="chat-header">
+      <div class="chat-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-arrow-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="chat-header__column">
+        <h1 class="chat-header__title">Cat</h1>
+      </div>
+      <div class="chat-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="chat-screen">
+      <div class="main-chat">
+        <div class="main-chat__date-bar">
+          <span>Tuesday, April 25, 2022</span>
+        </div>
+      </div>
+      <div class="left-text">
+        <img
+          src="https://live.staticflickr.com/3063/2330075353_ed0bacfb33_b.jpg"
+        />
+        <div class="left-text__main">
+          <span class="left-text__main__name">Cat</span>
+          <div class="left-text__main__message"><span>I'm hungry</span></div>
+        </div>
+        <div class="left-text__main__time"><span>21:22</span></div>
+      </div>
+
+      <div class="left-text left-text-secound">
+        <img
+          src="https://live.staticflickr.com/3063/2330075353_ed0bacfb33_b.jpg"
+        />
+        <div class="left-text__main">
+          <span class="left-text__main__name">Cat</span>
+          <div class="left-text__main__message-secound">
+            <span>Delicious food when you come</span>
+          </div>
+        </div>
+        <div class="left-text__main__time"><span>21:22</span></div>
+      </div>
+
+      <div class="right-text">
+        <div class="right-text__main__time"><span>21:22</span></div>
+        <div class="right-text__main__message">
+          <span>all right</span>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-solid fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <i class="fa-solid fa-paw"></i>
+      <span>Your screen is too big</span>
+      <i class="fa-solid fa-paw"></i>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/bd982df679.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

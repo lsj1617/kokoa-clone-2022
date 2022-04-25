@@ -1,0 +1,21 @@
+.badge{
+    background-color: tomato;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 600;
+
+}
+
+
+.chats-component .badge{
+
+    width:22px;
+    height: 22px;
+    margin-top: 5px;
+    font-size: 10px;
+}

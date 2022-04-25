@@ -1,0 +1,81 @@
+.more-icons{
+    border:none;
+}
+
+.kokoa-pay{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--yellow);
+    padding:30px 0px;
+}
+
+.kokoa-pay__title,
+.kokoa-pay__main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.kokoa-pay__title span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.kokoa-pay__title {
+    margin-bottom: 30px;
+}
+
+.kokoa-pay__main__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kokoa-pay__bar{
+    height: 15px;
+    width: 2px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0px 5px;
+}
+
+
+.kokoa-weather{
+    margin-top: 50px;
+    border-top:var(--main-border);
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0px 20px 20px;
+}
+
+.kokoa-weather__main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.kokoa-weather__now span{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.kokoa-weather__tomorrow-morning i,
+.kokoa-weather__tomorrow-afternoon i{
+    margin-top: 20px;
+
+}
+
+.kokoa-weather__tomorrow-afternoon i{
+    color: var(--yellow);
+}
+
+.temperatures{
+    font-size:18px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Friends-Animal-Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__left">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi fa-lg"></i>
+      </div>
+      <div class="status-bar__center">
+        <span>22:25</span>
+      </div>
+      <div class="status-bar__right">
+        <span>80%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <span class="main-header__name">Friends</span>
+      <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+      <span><i class="fa-solid fa-music fa-lg"></i></span>
+      <span
+        ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
+      ></span>
+    </header>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <img
+          src="data:image/jpeg;base64,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"
+        />
+        <div class="user-component__text">
+          <span class="user-name">Hamster</span>
+          <!--<h4 class="user-subtitle">whatever</h4> -->
+        </div>
+      </div>
+
+      <div class="favorites">
+        <span>favorites</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div>
+        <div class="user-component favorites-component">
+          <img
+            src="https://live.staticflickr.com/3063/2330075353_ed0bacfb33_b.jpg"
+          />
+          <div class="user-component__text favorites-component__text">
+            <span class="user-name favorites-name">Cat</span>
+            <h4 class="user-subtitle favorites-subtitle">Nyangnyang</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel">
+        <span>channel</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component channel-component">
+        <div class="channel-component__image">
+          <i class="fa-solid fa-paw fa-lg"></i>
+        </div>
+        <div class="user-component__text channel-component__text">
+          <span class="user-name channel-name">Channel</span>
+          <div class="channel-component__text__plus">
+            <span>12</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends">
+        <span>friends 3</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component friends-component">
+        <img
+          src="https://live.staticflickr.com/3063/2330075353_ed0bacfb33_b.jpg"
+        />
+        <div class="user-component__text friends-component__text">
+          <span class="user-name friends-name">Cat</span>
+          <h4 class="user-subtitle friends-subtitle">Nyangnyang</h4>
+        </div>
+      </div>
+
+      <div class="user-component friends-component">
+        <img
+          src="https://live.staticflickr.com/488/32434566242_f50473a076_b.jpg"
+        />
+        <div class="user-component__text friends-component__text">
+          <span class="user-name friends-name">Dog</span>
+          <h4 class="user-subtitle friends-subtitle">Waaaaaa</h4>
+        </div>
+      </div>
+
+      <div class="user-component friends-component">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxkQ91aDlwnX8atRT1PVtMbFQcFhoMOky0Q&usqp=CAU"
+        />
+        <div class="user-component__text friends-component__text">
+          <span class="user-name friends-name">Lizard</span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="shopping.html"
+            ><i class="fa-solid fa-bag-shopping fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification-2"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <i class="fa-solid fa-paw"></i>
+      <span>Your screen is too big</span>
+      <i class="fa-solid fa-paw"></i>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/bd982df679.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

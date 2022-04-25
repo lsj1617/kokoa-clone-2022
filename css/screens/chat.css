@@ -1,0 +1,234 @@
+.chat-bar{
+    background-color: #abc1d1;
+    opacity: 1;
+    z-index: 2;
+}
+
+.chat-header{
+    top:0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #abc1d1;
+}
+
+@keyframes slow{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+.main-chat
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chat-screen{
+    animation: slow 0.8s linear;
+}
+
+.main-chat__date-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.2);
+    margin-top: 130px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.main-chat__date-bar span{
+    
+    color:white;
+}
+
+.left-text{
+    margin-top: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-text-secound{
+    margin-top: 10px;
+}
+
+.left-text img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.left-text__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-text__main__name{
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.left-text__main__message,
+.left-text__main__message-secound,
+.left-text__main__message-secound-2{
+    border-top: 5px;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-text__main__message-secound{
+    width: 250px;
+    height: 40px;
+}
+
+.left-text__main__message-secound-2{
+    width: 160px;
+    height: 40px;
+}
+
+
+.left-text__main__time{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5px;
+}
+
+.left-text__main__time span{
+    opacity: 0.6;
+}
+
+.right-text{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+
+}
+
+.right-text__main__time{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 5px;
+}
+
+.right-text__main__time span{
+    opacity: 0.6;
+}
+
+.right-text__main__message,
+.right-text__main__message-2{
+    width: 100px;
+    height: 40px;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-text__main__message-2{
+    width: 250px;
+}
+
+.reply{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding:5px 25px;
+    transition: all 0.3s ease-in-out;
+}
+.reply .reply__column:first-child{
+    width: 10%;
+
+}
+
+.reply .reply__column:last-child{
+    width: 90%;
+    position: relative;
+}
+
+.reply i {
+    opacity: 0.5;
+}
+
+/*column에 witdh를 줘야 input에 widht 100%를 적용시킬 수 있다.*/
+.reply input{
+    padding: 12px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+    position: absolute;
+    right:-3px;
+    top:5px;
+}
+
+.reply__column:last-child > i{
+    right: 40px;
+    top:20px;
+}
+
+.reply__column button{
+    background-color: var(--yellow);
+    border:none;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply__column button i{
+    opacity: 1;
+}
+.reply__column button:focus,
+.reply__column button:active{
+    outline:none;
+}
+
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button{
+    opacity: 0;
+}
+
+.reply:focus-within input {
+    width:95vw;
+    transform:translateX(-12%) translateY(-80px);
+}
+
+/*이 때 .reply input 에도 transtition이 있어야 한다.*/
+
+
+.reply:focus-within{
+    transform: translateY(80px);
+}

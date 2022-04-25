@@ -1,0 +1,34 @@
+
+.settings-top,
+.settings-middle,
+.settings-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: var(--main-border);
+    margin-bottom: 10px;
+}
+
+.settings-top__column,
+.settings-middle__column,
+.settings-bottom__column{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.settings-top__column i,
+.settings-middle__column i,
+.settings-bottom__column i{
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+
+.settings-top__column span,
+.settings-middle__column span,
+.settings-bottom__column{
+    font-size: 20px;
+}
